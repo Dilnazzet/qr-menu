@@ -1,43 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>QR Menu</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<div class="container">
+<header>
 
-    <h1>🍽 QR Menu</h1>
+<div class="overlay">
 
-    <p>Добро пожаловать!</p>
+<h1>🍽 QR MENU</h1>
 
-    <div class="menu">
-
-        <div class="card">
-            <h2>🍕 Пицца</h2>
-            <p>Маргарита</p>
-            <span>3500 ₸</span>
-        </div>
-
-        <div class="card">
-            <h2>🍔 Бургер</h2>
-            <p>Говяжий бургер</p>
-            <span>4200 ₸</span>
-        </div>
-
-        <div class="card">
-            <h2>🥤 Напиток</h2>
-            <p>Лимонад</p>
-            <span>1200 ₸</span>
-        </div>
-
-    </div>
+<p>Добро пожаловать!</p>
 
 </div>
+
+</header>
+
+<section class="categories">
+
+<button class="active">🍕 Пицца</button>
+<button>🍔 Бургеры</button>
+<button>🥗 Салаты</button>
+<button>🥤 Напитки</button>
+
+</section>
+
+<section class="foods">
+
+<div class="food">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800">
+
+<div>
+
+<h2>Маргарита</h2>
+
+<p>Классическая итальянская пицца</p>
+
+<span>3500 ₸</span>
+
+</div>
+
+</div>
+
+<div class="food">
+
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800">
+
+<div>
+
+<h2>Биф Бургер</h2>
+
+<p>Говядина, сыр Чеддер</p>
+
+<span>4200 ₸</span>
+
+</div>
+
+</div>
+
+<div class="food">
+
+<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800">
+
+<div>
+
+<h2>Лимонад</h2>
+
+<p>Свежий цитрусовый напиток</p>
+
+<span>1200 ₸</span>
+
+</div>
+
+</div>
+
+</section>
 
 <script src="script.js"></script>
 
