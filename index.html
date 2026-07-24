@@ -1,94 +1,202 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>QR Menu</title>
+    <title>SAVORA | Fine Dining</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/6b52d3b8c0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-<header>
+<header class="hero">
 
-<div class="overlay">
+<nav>
 
-<h1>🍽 QR MENU</h1>
+<div class="logo">
 
-<p>Добро пожаловать!</p>
+SAVORA
+
+</div>
+
+<ul>
+
+<li><a href="#menu">Menu</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="hero-content">
+
+<span class="premium">
+Fine Dining Experience
+</span>
+
+<h1>
+Crafted with Passion.<br>
+Served with Elegance.
+</h1>
+
+<p>
+Discover premium cuisine made from carefully selected ingredients.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#menu" class="gold-btn">
+View Menu
+</a>
+
+<a href="#contact" class="outline-btn">
+Book a Table
+</a>
+
+</div>
 
 </div>
 
 </header>
 
-<section class="categories">
+<section class="search">
 
-<button class="active">🍕 Пицца</button>
-<button>🍔 Бургеры</button>
-<button>🥗 Салаты</button>
-<button>🥤 Напитки</button>
+<input
+type="text"
+placeholder="Search dishes..."
+id="search">
+
+</section>
+
+<section id="menu" class="categories">
+
+<button class="active">
+🔥 Signature
+</button>
+
+<button>
+🥩 Grill
+</button>
+
+<button>
+🍕 Pizza
+</button>
+
+<button>
+🍔 Burgers
+</button>
+
+<button>
+🥗 Salads
+</button>
+
+<button>
+🍷 Drinks
+</button>
+
+<button>
+🍰 Desserts
+</button>
 
 </section>
 
-<section class="foods">
+<section class="menu">
 
-<div class="food">
+<!-- JavaScript will create menu cards here -->
 
-<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800">
+</section>
 
-<div>
+<section id="about" class="about">
 
-<h2>Маргарита</h2>
+<h2>
+About SAVORA
+</h2>
 
-<p>Классическая итальянская пицца</p>
+<p>
 
-<span>3500 ₸</span>
+SAVORA is a premium restaurant inspired by modern European cuisine.
+Every dish is prepared with fresh ingredients and attention to every detail.
 
-</div>
+</p>
 
-</div>
-
-<div class="food">
-
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800">
-
-<div>
-
-<h2>Биф Бургер</h2>
-
-<p>Говядина, сыр Чеддер</p>
-
-<span>4200 ₸</span>
-
-</div>
-
-</div>
-
-<div class="food">
-
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800">
+<div class="features">
 
 <div>
 
-<h2>Лимонад</h2>
+<h3>Fresh Products</h3>
 
-<p>Свежий цитрусовый напиток</p>
+<p>
+Daily selected ingredients.
+</p>
 
-<span>1200 ₸</span>
+</div>
+
+<div>
+
+<h3>Professional Chefs</h3>
+
+<p>
+Award-winning culinary team.
+</p>
+
+</div>
+
+<div>
+
+<h3>Premium Service</h3>
+
+<p>
+Warm atmosphere and excellent hospitality.
+</p>
 
 </div>
 
 </div>
 
 </section>
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<div class="contact-box">
+
+<p>
+📍 Aktobe, Kazakhstan
+</p>
+
+<p>
+📞 +7 (700) 123-45-67
+</p>
+
+<p>
+✉ info@savora.kz
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 SAVORA.
+All rights reserved.
+
+</p>
+
+</footer>
 
 <script src="script.js"></script>
 
