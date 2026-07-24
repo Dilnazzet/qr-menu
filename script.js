@@ -111,3 +111,40 @@ const menu = [
     renderMenu(filtered);
   
   });
+
+  // ===== Categories =====
+
+const buttons = document.querySelectorAll(".categories button");
+
+buttons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    button.classList.add("active");
+
+    let category = button.textContent;
+
+    category = category.replace("🔥", "");
+    category = category.replace("🥩", "");
+    category = category.replace("🍕", "");
+    category = category.replace("🍔", "");
+    category = category.replace("🥗", "");
+    category = category.replace("🍷", "");
+    category = category.replace("🍰", "");
+
+    category = category.trim();
+
+    if (category === "Signature") {
+      renderMenu(menu);
+      return;
+    }
+
+    const filtered = menu.filter(item => item.category === category);
+
+    renderMenu(filtered);
+
+  });
+
+});
