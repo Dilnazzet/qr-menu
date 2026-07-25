@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SAVORA | Fine Dining</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>SAVORA Restaurant</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/6b52d3b8c0.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <div class="overlay-bg" id="overlayBg"></div>
 
 <header class="hero">
 
 <nav>
 
-<div class="logo">
-
-SAVORA
-
-</div>
+    <div class="logo">
+        SAVORA
+        </div>
+        
+        <div class="cart-icon" id="cartIcon">
+        
+        🛒
+        
+        <span id="cart-count">
+        0
+        </span>
+        
+        </div>
 
 <ul>
 
 <li><a href="#menu">Menu</a></li>
+
 <li><a href="#about">About</a></li>
+
 <li><a href="#contact">Contact</a></li>
 
 </ul>
@@ -40,17 +52,19 @@ SAVORA
 
 <div class="hero-content">
 
-<span class="premium">
-Fine Dining Experience
-</span>
+<div class="premium">
+Fine Dining Restaurant
+</div>
 
 <h1>
-Crafted with Passion.<br>
-Served with Elegance.
+Taste Beyond Expectations
 </h1>
 
 <p>
-Discover premium cuisine made from carefully selected ingredients.
+
+Premium steaks, handmade pizza,
+signature burgers and unforgettable desserts.
+
 </p>
 
 <div class="hero-buttons">
@@ -60,7 +74,7 @@ View Menu
 </a>
 
 <a href="#contact" class="outline-btn">
-Book a Table
+Book Table
 </a>
 
 </div>
@@ -73,12 +87,12 @@ Book a Table
 
 <input
 type="text"
-placeholder="Search dishes..."
-id="search">
+id="search"
+placeholder="Search your favorite dish...">
 
 </section>
 
-<section id="menu" class="categories">
+<section class="categories">
 
 <button class="active">
 🔥 Signature
@@ -110,95 +124,139 @@ id="search">
 
 </section>
 
-<section class="menu">
-
-<!-- JavaScript will create menu cards here -->
-
+<section id="menu" class="menu">
 </section>
-
 <section id="about" class="about">
 
-<h2>
-About SAVORA
-</h2>
+    <h2>About SAVORA</h2>
+    
+    <p>
+    
+    SAVORA is a modern premium restaurant where every dish is prepared
+    with carefully selected ingredients and served with attention to every detail.
+    Our menu combines European cuisine, grilled specialties, Italian pizza,
+    signature burgers and handcrafted desserts.
+    
+    </p>
+    
+    <div class="features">
+    
+    <div>
+    <h3>Premium Ingredients</h3>
+    <p>Fresh products delivered daily from trusted suppliers.</p>
+    </div>
+    
+    <div>
+    <h3>Professional Chefs</h3>
+    <p>Experienced chefs creating unforgettable flavors.</p>
+    </div>
+    
+    <div>
+    <h3>Fast Service</h3>
+    <p>Quality food with excellent customer experience.</p>
+    </div>
+    
+    </div>
+    
+    </section>
+    
+    <section id="contact" class="contact">
+    
+    <h2>Contact</h2>
+    
+    <div class="contact-box">
+    
+    <p>📍 Aktobe, Kazakhstan</p>
+    
+    <p>📞 +7 (777) 123-45-67</p>
+    
+    <p>🕒 Every day: 10:00 – 23:00</p>
+    
+    <p>📧 info@savora.kz</p>
+    
+    </div>
+    
+    </section>
+    
+    <footer>
+    
+    <p>© 2026 SAVORA Restaurant. All Rights Reserved.</p>
+    
+    </footer>
+    <div class="cart-panel" id="cartPanel">
 
-<p>
+        <div class="cart-header">
+        
+        <h2>Your Cart</h2>
+        
+        <button id="closeCart">
+        
+        ✕
+        
+        </button>
+        
+        </div>
+        <div class="checkout-modal" id="checkoutModal">
 
-SAVORA is a premium restaurant inspired by modern European cuisine.
-Every dish is prepared with fresh ingredients and attention to every detail.
-
-</p>
-
-<div class="features">
-
-<div>
-
-<h3>Fresh Products</h3>
-
-<p>
-Daily selected ingredients.
-</p>
-
-</div>
-
-<div>
-
-<h3>Professional Chefs</h3>
-
-<p>
-Award-winning culinary team.
-</p>
-
-</div>
-
-<div>
-
-<h3>Premium Service</h3>
-
-<p>
-Warm atmosphere and excellent hospitality.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" class="contact">
-
-<h2>Contact</h2>
-
-<div class="contact-box">
-
-<p>
-📍 Aktobe, Kazakhstan
-</p>
-
-<p>
-📞 +7 (700) 123-45-67
-</p>
-
-<p>
-✉ info@savora.kz
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 SAVORA.
-All rights reserved.
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+            <div class="checkout-box">
+        
+                <h2>🍽 Order Summary</h2>
+        
+                <div id="checkoutItems"></div>
+        
+                <h3>Total: <span id="checkoutTotal">0 ₸</span></h3>
+        
+                <div class="checkout-buttons">
+        
+                    <button id="confirmOrder">
+                        Confirm Order
+                    </button>
+        
+                    <button id="cancelCheckout">
+                        Cancel
+                    </button>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+        
+        <div id="cartItems">
+        
+        <p class="empty-cart">
+        
+        Cart is empty
+        
+        </p>
+        
+        </div>
+        
+        <div class="cart-footer">
+        
+        <h3>
+        
+        Total:
+        <span id="cartTotal">
+        
+        0 ₸
+        
+        </span>
+        
+        </h3>
+        
+        <button id="checkoutBtn">
+        
+        Checkout
+        
+        </button>
+        
+        </div>
+        
+        </div>
+    
+    <script src="script.js"></script>
+    
+    </body>
+    
+    </html>
